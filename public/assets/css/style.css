@@ -1,0 +1,11 @@
+#accordion-questionnaire{
+	counter-reset: my-awesome-counter;
+}
+#accordion-questionnaire .card{
+	counter-increment: my-awesome-counter;
+}
+
+#accordion-questionnaire .card .card-header__title span:after {
+  content: counter(my-awesome-counter) ". ";
+  font-weight: bold;
+}
